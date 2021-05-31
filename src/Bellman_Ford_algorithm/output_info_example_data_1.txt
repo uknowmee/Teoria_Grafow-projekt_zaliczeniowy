@@ -1,0 +1,68 @@
+Num of vertices: 9
+
+Num of edges: 15
+
+Adjacency_List = sorted adj. list [[[end, value]], ...]:
+[[1, 5], [8, 2]]
+[[2, 7], [6, 3]]
+[[3, 8], [5, 5], [7, 7]]
+[[4, 4]]
+[]
+[[7, 2]]
+[[2, 2], [5, 6], [8, -2]]
+[[3, 3]]
+[[1, 2], [5, 9]]
+
+Edges_Dict = [[start, end, value], ...]:
+0: [0, 1, 5]
+1: [0, 8, 2]
+2: [1, 2, 7]
+3: [1, 6, 3]
+4: [2, 3, 8]
+5: [2, 5, 5]
+6: [2, 7, 7]
+7: [3, 4, 4]
+8: [5, 7, 2]
+9: [6, 2, 2]
+10: [6, 5, 6]
+11: [6, 8, -2]
+12: [7, 3, 3]
+13: [8, 1, 2]
+14: [8, 5, 9]
+
+Incidence_Matrix = standard -1, 0, 1 incidence matrix:
+[[ 1  1  0  0  0  0  0  0  0  0  0  0  0  0  0]
+ [-1  0  1  1  0  0  0  0  0  0  0  0  0 -1  0]
+ [ 0  0 -1  0  1  1  1  0  0 -1  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  1  0  0  0  0 -1  0  0]
+ [ 0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0 -1  0  0  1  0 -1  0  0  0 -1]
+ [ 0  0  0 -1  0  0  0  0  0  1  1  1  0  0  0]
+ [ 0  0  0  0  0  0 -1  0 -1  0  0  0  1  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0  0 -1  0  1  1]]
+
+Adjacency_Matrix = standard adjacency matrix:
+[[0 1 0 0 0 0 0 0 1]
+ [0 0 1 0 0 0 1 0 0]
+ [0 0 0 1 0 1 0 1 0]
+ [0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 1 0]
+ [0 0 1 0 0 1 0 0 1]
+ [0 0 0 1 0 0 0 0 0]
+ [0 1 0 0 0 1 0 0 0]]
+
+[##############################]
+[##]BELLMAN FORD - ALGORITHM[##]
+[##############################]
+
+Distance_List:
+to Vertex: [0] predecessor: [-1]; distance: 0
+to Vertex: [1] predecessor: [8]; distance: 4
+to Vertex: [2] predecessor: [6]; distance: 9
+to Vertex: [3] predecessor: [7]; distance: 16
+to Vertex: [4] predecessor: [3]; distance: 20
+to Vertex: [5] predecessor: [8]; distance: 11
+to Vertex: [6] predecessor: [1]; distance: 7
+to Vertex: [7] predecessor: [5]; distance: 13
+to Vertex: [8] predecessor: [0]; distance: 2
